@@ -33,5 +33,6 @@ int main() {
     vector<int> gas = {1, 2, 3, 4, 5};
     vector<int> cost = {3, 4, 5, 1, 2};
 
-    canCompleteCircuit(gas, cost);
+    cout << "The Starting Station is: ";
+    cout << canCompleteCircuit(gas, cost);
 }
