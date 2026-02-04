@@ -52,7 +52,8 @@ using namespace std;
  *      - Last line always left-justified regardless of word count
  */
 vector<string> fullJustify(vector<string>& words, int maxWidth) {
-    // TODO: Implement the text justification algorithm following the steps above
+    // Function skeleton with documentation - implementation to be added
+    // Follow the algorithm steps documented above
 }
 
 int main() {
