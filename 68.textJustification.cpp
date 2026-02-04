@@ -1,6 +1,6 @@
-#include<iostream>
-#include<vector>
-#include<string>
+#include <iostream>
+#include <vector>
+#include <string>
 
 using namespace std;
 
@@ -14,7 +14,7 @@ using namespace std;
  * @param maxWidth - Maximum width of each line
  * @return Vector of strings representing the justified text lines
  */
-vector<string> justifyText(vector<string> words, int maxWidth) {
+vector<string> justifyText(const vector<string>& words, int maxWidth) {
     vector<string> result;
     
     // TODO: Implement text justification logic here
