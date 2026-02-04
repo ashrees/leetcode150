@@ -13,9 +13,9 @@
  * 5. The last line should be left-justified with no extra space between words
  */
 
-#include<iostream>
-#include<vector>
-#include<string>
+#include <iostream>
+#include <vector>
+#include <string>
 
 using namespace std;
 
@@ -59,7 +59,6 @@ vector<string> fullJustify(vector<string>& words, int maxWidth) {
         
         // Step 2: Build the justified line
         int numWords = j - i;  // Number of words in current line
-        int numSpaces = maxWidth - lineLength;  // Extra spaces to distribute
         
         string line = "";
         
@@ -71,7 +70,8 @@ vector<string> fullJustify(vector<string>& words, int maxWidth) {
                 if(k < j - 1) line += " ";  // Single space between words
             }
             // Pad remaining spaces at the end
-            while(line.size() < maxWidth) {
+            int paddingNeeded = maxWidth - line.size();
+            for(int p = 0; p < paddingNeeded; p++) {
                 line += " ";
             }
         } else {
