@@ -47,7 +47,7 @@ int main() {
     string s{"barfoofoobarthefoobarman"};
     vector<string> words = {"bar","foo","the"};
 
-    cout << "The indexes are: ";
+    cout << "The starting indices of all the concatenated substrings are: ";
 
     for(int i : findSubstring(s, words)) {
         cout << i << " ";
